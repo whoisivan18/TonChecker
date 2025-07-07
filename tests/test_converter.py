@@ -1,5 +1,11 @@
 from decimal import Decimal
 
+import os
+import sys
+
+# Allow importing the converter module from the project root.
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from converter import convert_rub_to_ton, convert_ton_to_rub
 
 
